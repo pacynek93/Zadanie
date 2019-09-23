@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Nowodworski Estates Properties Manager</title>
+</head>
+<body class="bg-light">
+<header class="header container text-center pt-3">
+    <img class="pb-3" src="./assets/logo.jpg" alt="Nowodworski Estates Logo"/>
+    <h1>Welcome to Properties Manager</h1>
+</header>
+<div class="container">
+    <div id="formContainer" class="hidden">
+        <h3>Add or modify property form</h3>
+        <form>
+            <div class="form-group">
+                <label for="apartment">Apartment Number</label>
+                <input required type="text" class="form-control" id="apartment" placeholder="Apartment Number">
+            </div>
+            <div class="form-group">
+                <label for="city">City</label>
+                <input required type="text" class="form-control" id="city" placeholder="City">
+            </div>
+            <div class="form-group">
+                <label for="description">Description</label>
+                <input required type="text" class="form-control" id="description" placeholder="Description">
+            </div>
+            <div class="form-group">
+                <label for="price">Price</label>
+                <input required type="text" class="form-control" id="price" placeholder="Price">
+            </div>
+            <div class="form-group">
+                <label for="property">Property Number</label>
+                <input required type="text" class="form-control" id="property" placeholder="Property Number">
+            </div>
+            <div class="form-group">
+                <label for="street">Street</label>
+                <input required type="text" class="form-control" id="street" placeholder="Street">
+            </div>
+            <div class="form-group">
+                <label for="type">Property type</label>
+                <input required type="text" class="form-control" id="type" placeholder="Type">
+            </div>
+            <div class="form-buttons-container d-flex justify-content-end">
+
+            </div>
+        </form>
+    </div>
+    <div class="py-5">
+        <ol>
+            <li class="lead">Below you can find all current properties listed.</li>
+            <li class="lead">To manage them simply use modify or delete buttons on each list element.</li>
+            <li class="lead">To add new property use 'Add new' button on the right.</li>
+            <li class="lead">Be careful with 'Remove all' button, that will remove all properties and you cannot undo
+                this action.
+            </li>
+            <li class="lead">Use 'Show all' button to reload properties list.</li>
+        </ol>
+    </div>
+    <div class="row">
+        <div class="col-md-3 order-md-2 mb-3 flex-column d-flex">
+            <button type="button" id="addNew" class="btn btn-success btn-lg my-1">Add new</button>
+            <button type="button" id="showAll" class="btn btn-info btn-lg my-1">Show all</button>
+            <button type="button" id="removeAll" class="btn btn-danger my-1">Remove all</button>
+        </div>
+        <div id="propertiesList" class="col-md-9 order-md-1 d-flex justify-content-center align-items-center flex-column">
+
+        </div>
+    </div>
+</div>
+<footer class="footer container my-5 pt-5 text-muted text-center">
+    <p class="mb-1">© Made for Nowodworski Estates</p>
+</footer>
+</body>
+</html>
